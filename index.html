@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>hello</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js" defer></script>
+   </head>
+   <body>
+      <h1>String Method Playground</h1>
+      <!-- Show-Box -->
+      <div id="show-box" class="show-box"></div>
+
+      <!-- Input-Box -->
+      <div class="input-box">
+         <input
+            class="input-num"
+            type="number"
+            name=""
+            id="input"
+            placeholder="Type Number"
+         />
+      </div>
+      <div class="string-method-button">
+         <button id=""   onclick="charAt()"  class="string-btn">charAt()</button>
+         <button id=""   onclick=""  class="string-btn">charCodeAt()</button>
+         <button id=""   onclick=""  class="string-btn">toUpperCaes()</button>
+         <button id=""   onclick=""  class="string-btn">toLowercase()</button>
+         <button id=""   onclick=""  class="string-btn">trim()</button>
+         <button id=""   onclick=""  class="string-btn">includes()</button>
+         <button id=""   onclick=""  class="string-btn">indexOf()</button>
+         <button id=""   onclick=""  class="string-btn">lastIndexOf()</button>
+         <button id=""   onclick=""  class="string-btn">startsWith()</button>
+         <button id=""   onclick=""  class="string-btn">endsWith()</button>
+      </div>
+
+      <!-- keyboard-section -->
+      <div class="keyboard-section">
+         <!-- Keyboards-Keys -->
+         <div class="keyboard-keys">
+            <!-- Row(1) -->
+            <div class="row row-one">
+               <button class="keys">`</button>
+               <buttom id="one" onclick="key_one()" class="keys">1</buttom>
+               <buttom id="two" onclick="key_two()" class="keys">2</buttom>
+               <buttom id="three" onclick="key_three()" class="keys">3</buttom>
+               <buttom id="four" onclick="key_four()" class="keys">4</buttom>
+               <buttom id="five" onclick="key_five()" class="keys">5</buttom>
+               <buttom id="six" onclick="key_six()" class="keys">6</buttom>
+               <buttom id="seven" onclick="key_seven()" class="keys">7</buttom>
+               <buttom id="eight" onclick="key_eight()" class="keys">8</buttom>
+               <buttom id="nine" onclick="key_nine()" class="keys">9</buttom>
+               <buttom id="zero" onclick="key_zero()" class="keys">0</buttom>
+               <buttom class="keys">-</buttom>
+               <buttom class="keys">=</buttom>
+               <buttom  id="clear" onclick="clear_key()"       class="keys clear-key">Clear</buttom>
+            </div>
+            <!-- Row(2) -->
+            <div class="row row-two">
+               <button class="keys tab-key">Tab</button>
+               <button id="q1" onclick="key_q1()" class="keys">q</button>
+               <button id="w1" onclick="key_w1()" class="keys">w</button>
+               <button id="e1" onclick="key_e1()" class="keys">e</button>
+               <button id="r1" onclick="key_r1()" class="keys">r</button>
+               <button id="t1" onclick="key_t1()" class="keys">t</button>
+               <button id="y1" onclick="key_y1()" class="keys">y</button>
+               <button id="u1" onclick="key_u1()" class="keys">u</button>
+               <button id="i1" onclick="key_i1()" class="keys">i</button>
+               <button id="o1" onclick="key_o1()" class="keys">o</button>
+               <button id="p1" onclick="key_p()" class="keys"p</button>
+               <button class="keys">{</button>
+               <button class="keys">}</button>
+               <button class="keys slash-key">\</button>
+            </div>
+            <!-- Row3 -->
+            <div class="row row-three">
+               <button class="keys caps-lock-key">Caps Lock</button>
+               <button id="a1" onclick="key_a1()" class="keys">a</button>
+               <button id="s1" onclick="key_s1()" class="keys">s</button>
+               <button id="d1" onclick="key_d1()" class="keys">d</button>
+               <button id="f1" onclick="key_f1()" class="keys">f</button>
+               <button id="g1" onclick="key_g1()" class="keys">g</button>
+               <button id="h1" onclick="key_h1()" class="keys">h</button>
+               <button id="j1" onclick="key_j1()" class="keys">j</button>
+               <button id="k1" onclick="key_k1()" class="keys">k</button>
+               <button id="l1" onclick="key_l1()" class="keys">l</button>
+               <button class="keys">:</button>
+               <button class="keys">"</button>
+               <button class="keys enter-key">Enter</button>
+            </div>
+
+            <!-- Row(4) -->
+            <div class="row row-four">
+               <button class="keys shift-key shift-left">Shift</button>
+               <button id="z1" onclick="key_z1()" class="keys">z</button>
+               <button id="x1" onclick="key_x1()" class="keys">x</button>
+               <button id="c1" onclick="key_c1()" class="keys">c</button>
+               <button id="v1" onclick="key_v1()" class="keys">v</button>
+               <button id="b1" onclick="key_b1()" class="keys">b</button>
+               <button id="n1" onclick="key_n1()" class="keys">n</button>
+               <button id="m1" onclick="key_m1()" class="keys">m</button>
+               <button class="keys"><</button>
+               <button class="keys">></button>
+               <button class="keys">/</button>
+               <button class="keys">?</button>
+               <button class="keys shift-key shift-right">Shift</button>
+            </div>
+            <!-- row(5) -->
+            <div class="row row-five">
+               <button class="keys ctrl-key ctrl-left">Ctrl</button>
+               <button class="keys win-key">Win</button>
+               <button class="keys alt-key alt-left">Alt</button>
+               <button  id="space"  onclick="space_key()" class="keys space-key"></button>
+               <button class="keys alt-key alt-right">Alt</button>
+               <button class="keys fn-key">Fn</button>
+               <button class="keys ctrl-key ctrl-right">Ctrl</button>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
